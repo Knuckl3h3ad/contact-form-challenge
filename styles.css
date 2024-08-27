@@ -1,0 +1,154 @@
+.karla-all {
+    font-family: "Karla", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lighterGreen: hsl(148, 38%, 91%);
+    --mediumGreen: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --mediumGrey: hsl(186, 15%, 59%);
+    --darkerGrey: hsl(187, 24%, 22%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--lighterGreen);
+    font-family: "Karla", sans-serif;
+}
+
+.notification {
+    background-color: var(--mediumGreen);
+    color: var(--white);
+}
+
+.form {
+    background-color: var(--white);
+    color: var(--darkerGrey);
+    border: none;
+    border-radius: 1em;
+    width: 40rem;
+}
+
+.form h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#form_content {
+    padding: 2rem;
+}
+
+#form_content span {
+    color: var(--mediumGreen);
+    margin-bottom: 0.8rem;
+}
+
+.title {
+    margin-top: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.title label {
+    margin-right: 12rem;
+    margin-bottom: 2rem;
+}
+
+#first,
+#last {
+    margin-top: 0.84rem;
+}
+
+input {
+    border: 1px solid var(--mediumGrey);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.name_input input {
+    width: 49%;
+    margin-right: 0.2421rem;
+}
+
+.email_input input[type="text"] {
+    width: 99%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.query_input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.query_input div {
+    width: 48.5%;
+    border: 1px solid var(--mediumGrey);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.query_input input {
+    vertical-align: -2px;
+    margin-right: 0.3rem;
+}
+
+.message_input textarea {
+    border: 1px solid var(--mediumGrey);
+    border-radius: 0.5rem;
+    margin-top: 0.8rem;
+    width: 99%;
+    height: 6rem;
+    text-align: top;
+    resize: none;
+    padding: 0.8rem;
+}
+
+.consent {
+    display: inline-flex;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.consent input {
+    vertical-align: -2px;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.submit {
+    width: 100%;
+    background-color: var(--mediumGreen);
+    color: var(--white);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* later media query
+@media screen and (max-width: 700px) {
+    body {
+        
+    }
+}
+*/

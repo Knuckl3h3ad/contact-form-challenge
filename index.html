@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta information -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- styles -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- website title -->
+        <title>Frontend Mentor | Contact form</title>
+    </head>
+    <body>
+        <!-- notification container -->
+        <div id="submitted" class="notification"></div>
+
+        <!-- main content container -->
+        <div id="main" class="form">
+            <div id="form_content">
+                <!-- form title -->
+                <h1>Contact Us</h1>
+                <br />
+
+                <!-- first/last name input -->
+                <div class="name">
+                    <div class="title">
+                        <label for="fname" class="title"
+                            >First Name <span class="req"> * </span></label
+                        >
+                        <label for="lname" class="title"
+                            >Last Name <span class="req"> * </span></label
+                        >
+                    </div>
+                    <div class="name_input">
+                        <input id="first" type="text" />
+                        <input id="last" type="text" />
+                    </div>
+                    <br />
+                </div>
+
+                <!-- email input -->
+                <div class="email">
+                    <div class="title">
+                        <label
+                            >Email Address <span class="req"> * </span></label
+                        >
+                    </div>
+                    <div class="email_input">
+                        <input id="email" type="text" />
+                    </div>
+                </div>
+
+                <!-- query type selector -->
+                <div class="query">
+                    <div class="title">
+                        <label>Query Type <span class="req"> * </span></label>
+                    </div>
+                    <div class="query_input">
+                        <!-- general enquiry -->
+                        <div>
+                            <input
+                                type="radio"
+                                unchecked="unchecked"
+                                name="query"
+                            />
+                            <label>General Enquiry</label>
+                        </div>
+                        <!-- support request -->
+                        <div>
+                            <input
+                                type="radio"
+                                unchecked="unchecked"
+                                name="query"
+                            />
+                            <label>Support Request</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message text box -->
+                <div class="message">
+                    <div class="title">
+                        <label>Message <span class="req"> * </span></label>
+                    </div>
+                    <div class="message_input">
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <!-- consent checkbox -->
+                <div class="consent">
+                    <div>
+                        <input type="checkbox" unchecked />
+                        <label
+                            >I consent to being contacted by the team
+                            <span class="req"> * </span></label
+                        >
+                    </div>
+                </div>
+
+                <!-- submit button -->
+                <div>
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!--
+
+        Contact Us
+          
+        First Name
+        This field is required
+
+        Last Name
+        This field is required
+        
+        Email Address
+        Please enter a valid email address
+        This field is required
+
+        Query Type
+        General Enquiry
+        Support Request
+        Please select a query type
+        
+        Message
+        This field is required
+
+        I consent to being contacted by the team
+        To submit this form, please consent to being contacted
+        
+        Submit
+        
+        Message Sent!
+        Thanks for completing the form. We'll be in touch soon!
+      -->
+
+        <script src="main.js"></script>
+    </body>
+</html>
